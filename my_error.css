@@ -1,0 +1,44 @@
+/* 
+    Document   : main
+    Created on : 29-04-2013, 06:46:40 PM
+    Author     : Fernando
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*root { display: block;}*/
+.container{
+    *border: dashed red 1px;
+    margin: 0 5% ; 
+}
+body{position: relative;background-color: silver;
+     background: url("images/bg_01.giff") repeat-x scroll 0 0 #1C8046;
+}
+
+#header{
+    *position: absolute;
+    width: 100%;
+    height: 100px;
+    *border: 1px dashed green;    
+}
+
+#content{
+    /*border: 1px dashed transparent;*/
+    position: relative;
+    border-radius: 10px 10px 0px 0px;    
+    background:#fff url(images/admin_30.gif) 0 0 repeat-x;
+    background-size: auto 100%;
+    height: 400px;
+    *clear: both;    
+}
+
+#footer{    
+    width:100%;
+    height:30px;
+    background:#0c532a;
+    *border: dashed green 1px;
+    border-radius: 0px 0px 20px 20px;
+    clear: both;
+}
+
+
