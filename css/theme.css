@@ -1,0 +1,126 @@
+body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
+     background: url("../images/bg_01.gif") repeat-x scroll 0 0 #1C8046;
+     font-size: 1em;
+     line-height: 1.4;}
+.wrapper{ width: 90%;
+          margin: 0 5%;
+          border-left: transparent dotted 1px;
+          border-right: dotted transparent 1px;
+          clear: both;}
+.header{display: block; 
+        border-top: 1px transparent dotted;
+        border-bottom: 1px transparent dotted ;
+        overflow: hidden;
+        border-bottom: 20px solid transparent;}
+.header h1.logo{color: #FFFFFF;
+                text-align: center;
+                text-indent: 5000px;
+                background: transparent url(../images/logo.gif) 0 0 no-repeat;
+                margin: 0;
+                padding: 0;                
+                width:294px;
+                height:60px;}
+.header div.user{float: right;
+                 overflow: hidden;
+                 font-size: 12px;
+                 height: 60px;
+                 text-align: left;
+                 width: 275px;                 
+                 -webkit-border-radius: 0 0 10px 0;
+                 -moz-border-radius: 0 0 10px 0;
+                 border-radius:  0 0 10px 0;
+                 background: url("../images/admin_05.gif") repeat-x scroll 0 0 transparent;}
+.header .user div.izq{
+    background: url("../images/admin_04.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 60px;
+    width: 38px;    
+}
+.header .user > div{
+
+    height: 60px;
+    width: 226px;}
+.section {background:#fff url(../images/admin_30.gif) 0 0 repeat-x;
+          background-size: auto 100%;
+}
+.footer{background:#0c532a;
+        text-align: center;
+        color: white;
+        border-radius: 0px 0px 10px 10px;  }
+.section{display: block;
+         min-height: 400px;
+         border-top:dotted transparent 1px;
+         border-bottom: dotted transparent 1px;
+         clear: both;}
+.footer{display: block;
+        border-top: 1px transparent dotted;
+        height: 30px;
+        clear: both;}
+::-moz-selection {background: #b3d4fc;text-shadow: none;}
+::selection {background: #b3d4fc;text-shadow: none;}
+
+nav ul {margin: 0;
+        padding: 0;
+        overflow: hidden;}
+nav a {display: block;
+       margin-bottom: 10px;
+       padding: 15px 0;
+       text-align: center;
+       text-decoration: none;
+       font-weight: bold;
+       color: white;
+       background: #0c532a;
+}
+nav a:hover,
+nav a:visited {color: white;}
+nav a:hover {text-decoration: underline;}
+
+@media only screen and (min-width: 480px) {
+    nav a {float: left;
+           width: 27%;
+           margin: 0 1%;
+           padding: 10px 2%;
+           margin-bottom: 0;}
+    nav li:first-child a {margin-left: 0;}
+    nav li:last-child a {margin-right: 0;}
+    nav ul li {display: inline;}
+    .oldie nav a { margin: 0 0.7%;}
+}
+
+@media only screen and (min-width: 768px) {
+    .logo,
+    .main aside {-webkit-box-shadow: 0 5px 10px #FBBB00;
+                 -moz-box-shadow: 0 5px 10px #FBBB00;
+                 box-shadow: 0 5px 10px #FBBB00;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+    /* ============
+        WIDE: Main
+       ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .wrapper {
+        width: 1026px; /* 1140px - 10% para margenes*/
+        margin: 0 auto;
+    }
+}
