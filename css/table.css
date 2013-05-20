@@ -1,0 +1,129 @@
+.tablaLista{
+    width:100%;
+    *border:1px solid #cccccc;
+}
+
+.tablaReporte{
+    border:1px solid #006239;
+}
+/* thead */
+.tablaLista thead tr{
+    height:30px;
+    background:url(../images/tablaHead_01.gif) 0 0 repeat-x;
+}
+table thead {border:#006239 solid 1px }
+.tablaLista thead .tOpciones{
+    color:#000;
+    background:url(../images/tablaHead_01_2.gif) 0 0 repeat-x;
+}
+.tablaLista thead tr th{
+    color:#FFF;
+    font-size:13px;
+    text-align:center;
+    border-right:1px solid #006239;
+}
+/* tbody */
+table tbody{
+    background: #FFF url(../images/tablaFondo_01.gif) 0 0 repeat-x;
+    border-left: 1px solid #d6d8d7;border-right: 1px solid #d6d8d7;border-bottom:  1px solid #d6d8d7
+}
+
+.tablaLista tbody tr:nth-child(odd){
+    background-color: #ebebeb;
+}
+
+.section table tbody tr:nth-child(even){border-bottom:1px dashed #d6d8d7;border-top:1px dashed #d6d8d7;        }
+.section table tbody tr td:nth-child(even){border-left: 1px solid #d6d8d7;border-right: 1px solid #d6d8d7;        }
+
+.tablaLista tbody tr:hover{
+    color:#bf5900;
+    background:#f9e48c;
+}
+.tablaLista tbody tr td{
+    font-size:11px;
+   *border-bottom:1px dashed #d6d8d7;
+   *border-right:1px solid #cccccc;
+    padding:3px 0px 3px 5px;
+}
+.tablaLista tbody tr h1{
+    font-size:18px;
+    display:block;
+    color:#0080cb;
+    margin:40px 0px 50px 0;
+    padding:0;
+}
+a.linkOpciones{
+    text-decoration:none;
+    float:left;
+}
+a.linkOpciones img{
+    margin:0 0 0 7px;
+    border:0px;
+}
+/* tfoot */
+.tablaLista tfoot tr{
+    background: #d0edfd;
+}
+.tablaLista tfoot tr td{
+    color:#103955;
+    text-align:center;
+    padding:3px;
+}
+
+
+
+
+
+
+
+
+
+/* thead */
+.tablaReporte thead tr{
+    height:30px;
+    background:url(../images/tablaHead_01.gif) 0 0 repeat-x;
+}
+.tablaReporte thead .tOpciones{
+    color:#000;
+    background:url(../images/tablaHead_01_2.gif) 0 0 repeat-x;
+}
+.tablaReporte thead tr th{
+    color:#FFF;
+    font-size:13px;
+    text-align:center;
+    border-right:1px solid #87deff;
+}
+/* tbody */
+.tablaReporte tbody{
+    background: #FFF url(../images/tablaFondo_01.gif) 0 0 repeat-x;
+}
+.tablaReporteFila2{
+    background:#ebebeb;
+}
+.tablaReporte tbody tr:hover{
+    color:#bf5900;
+    background:#f9e48c;
+}
+.tablaReporte tbody tr td{
+    font-size:11px;
+    border-bottom:1px dashed #d6d8d7;
+    border-right:1px solid #cccccc;
+    padding:3px 0px 3px 5px;
+}
+.tablaReporte tbody tr h1{
+    font-size:18px;
+    display:block;
+    color:#0080cb;
+    margin:40px 0px 50px 0;
+    padding:0;
+}
+
+/* tfoot */
+.tablaReporte tfoot tr{
+    background: #d0edfd;
+}
+.tablaReporte tfoot tr td{
+    color:#103955;
+    text-align:center;
+    padding:3px;
+}

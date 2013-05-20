@@ -1,9 +1,9 @@
 body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
      background: url("../images/bg_01.gif") repeat-x scroll 0 0 #1C8046;
-     font-size: 1em;
-     line-height: 1.4;}
+     *font-size: 1em;
+     line-height: 1.1;}
 .wrapper{ width: 90%;
-          margin: 0 5%;
+          margin: 0 auto;
           border-left: transparent dotted 1px;
           border-right: dotted transparent 1px;
           clear: both;}
@@ -11,54 +11,59 @@ body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
         border-top: 1px transparent dotted;
         border-bottom: 1px transparent dotted ;
         overflow: hidden;
-        border-bottom: 20px solid transparent;}
+        *border-bottom: 20px solid #0c532a;}
 .header h1.logo{color: #FFFFFF;
                 text-align: center;
                 text-indent: 5000px;
                 background: transparent url(../images/logo.gif) 0 0 no-repeat;
                 margin: 0;
                 padding: 0;                
-                width:294px;
-                height:60px;}
-.header div.user{float: right;
-                 overflow: hidden;
-                 font-size: 12px;
-                 height: 60px;
-                 text-align: left;
-                 width: 275px;                 
-                 -webkit-border-radius: 0 0 10px 0;
-                 -moz-border-radius: 0 0 10px 0;
-                 border-radius:  0 0 10px 0;
-                 background: url("../images/admin_05.gif") repeat-x scroll 0 0 transparent;}
-.header .user div.izq{
-    background: url("../images/admin_04.gif") no-repeat scroll 0 0 transparent;
-    float: left;
+                width:275px;
+                height:60px;                
+                cursor: pointer;float: left}
+.header div.user{
+    float: right;
+    overflow: hidden;
+    font-size: 12px;
     height: 60px;
-    width: 38px;    
-}
-.header .user > div{
+    text-align: left;
+    width: 275px;                 
+    -webkit-border-radius: 0 0 10px 0;
+    -moz-border-radius: 0 0 10px 0;
+    border-radius:  0 0 10px 0;
+    background: url("../images/admin_04.gif") no-repeat scroll 0 0 transparent;}
 
-    height: 60px;
-    width: 226px;}
-.section {background:#fff url(../images/admin_30.gif) 0 0 repeat-x;
-          background-size: auto 100%;
-}
-.footer{background:#0c532a;
-        text-align: center;
-        color: white;
-        border-radius: 0px 0px 10px 10px;  }
-.section{display: block;
-         min-height: 400px;
+.header .user > div{background: url("../images/admin_05.gif") repeat-x scroll 0 0 transparent;
+                    height: 60px;
+                    width: 237px;
+                    float: right;}
+
+.section{position: relative;
+         display: block;
+         min-height: 500px;
+         overflow: scroll;
+         clear: both;
+         padding: 10px;
          border-top:dotted transparent 1px;
-         border-bottom: dotted transparent 1px;
-         clear: both;}
+         border-bottom: dotted transparent 1px;         
+         background:#fff url(../images/admin_30.gif) 0 0 repeat-x;
+         background-size: auto 100%;
+         border-radius: 10px 10px 0 0}
+.section div{
+    position: relative
+}
 .footer{display: block;
         border-top: 1px transparent dotted;
-        height: 30px;
-        clear: both;}
-::-moz-selection {background: #b3d4fc;text-shadow: none;}
-::selection {background: #b3d4fc;text-shadow: none;}
+        height: 26px;
+        clear: both;
+        font-size: 0.7em;
+        background:#0c532a;
+        text-align: center;
+        color: white;
+        padding-top: 4px;
+        border-radius: 0px 0px 10px 10px;}
 
+nav{*border: red solid 1px;clear: both}
 nav ul {margin: 0;
         padding: 0;
         overflow: hidden;}
@@ -84,38 +89,17 @@ nav a:hover {text-decoration: underline;}
     nav li:first-child a {margin-left: 0;}
     nav li:last-child a {margin-right: 0;}
     nav ul li {display: inline;}
-    .oldie nav a { margin: 0 0.7%;}
+    .oldie nav a { margin: 0 0.7%;}      
 }
 
 @media only screen and (min-width: 768px) {
+    nav {clear: none}
+    .header h1.logo{margin:0 10px 10px 0;}
     .logo,
     .main aside {-webkit-box-shadow: 0 5px 10px #FBBB00;
                  -moz-box-shadow: 0 5px 10px #FBBB00;
                  box-shadow: 0 5px 10px #FBBB00;
-    }
-
-    .logo {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-    /* ============
-        WIDE: Main
-       ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
+    }  
 }
 
 @media only screen and (min-width: 1140px) {
