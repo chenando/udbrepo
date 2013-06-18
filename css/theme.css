@@ -1,9 +1,9 @@
 body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
-     background: url("../images/bg_01.gif") repeat-x scroll 0 0 #1C8046;
-     *font-size: 1em;
+     background: none repeat-x scroll 0 0 #1C8046;
+     /**font-size: 1em;*/
      line-height: 1.1;}
-.wrapper{ width: 90%;
-          margin: 0 auto;
+.wrapper{ width: 96%;
+          margin: 0 2%;
           border-left: transparent dotted 1px;
           border-right: dotted transparent 1px;
           clear: both;}
@@ -11,7 +11,7 @@ body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
         border-top: 1px transparent dotted;
         border-bottom: 1px transparent dotted ;
         overflow: hidden;
-        *border-bottom: 20px solid #0c532a;}
+}
 .header h1.logo{color: #FFFFFF;
                 text-align: center;
                 text-indent: 5000px;
@@ -22,33 +22,32 @@ body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
                 height:60px;                
                 cursor: pointer;float: left}
 .header div.user{
+    background: url("../images/admin_05.gif") repeat-x scroll 0 0 transparent;
     float: right;
     overflow: hidden;
     font-size: 12px;
     height: 60px;
     text-align: left;
     width: 275px;                 
-    -webkit-border-radius: 0 0 10px 0;
-    -moz-border-radius: 0 0 10px 0;
-    border-radius:  0 0 10px 0;
-    background: url("../images/admin_04.gif") no-repeat scroll 0 0 transparent;}
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius:0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;    
+}
 
-.header .user > div{background: url("../images/admin_05.gif") repeat-x scroll 0 0 transparent;
-                    height: 60px;
-                    width: 237px;
-                    float: right;}
+.header .user  div.foto{float: left;margin: 4px}
+.header .user  div.info{font-weight: bold;padding: 2px;font-size: 12px;line-height: 14px}
 
-.section{position: relative;
-         display: block;
-         min-height: 500px;
-         overflow: scroll;
-         clear: both;
-         padding: 10px;
-         border-top:dotted transparent 1px;
-         border-bottom: dotted transparent 1px;         
-         background:#fff url(../images/admin_30.gif) 0 0 repeat-x;
-         background-size: auto 100%;
-         border-radius: 10px 10px 0 0}
+.placeholder{position: relative;
+             display: block;
+             min-height: 500px;
+             border: dotted red 1px;         
+             background:#fff url(../images/admin_30.gif) 0 0 repeat-x;
+             /*             *background-size: auto 100%;*/
+             border-radius: 10px 10px 0 0;
+             clear: both;      
+             /**overflow: hidden;*/
+             padding: 10px
+}
 .section div{
     position: relative
 }
@@ -63,10 +62,12 @@ body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
         padding-top: 4px;
         border-radius: 0px 0px 10px 10px;}
 
-nav{*border: red solid 1px;clear: both}
-nav ul {margin: 0;
-        padding: 0;
-        overflow: hidden;}
+nav{clear: both}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;}
 nav a {display: block;
        margin-bottom: 10px;
        padding: 15px 0;
@@ -107,4 +108,12 @@ nav a:hover {text-decoration: underline;}
         width: 1026px; /* 1140px - 10% para margenes*/
         margin: 0 auto;
     }
+}
+
+.titulo{
+    background-color: #8ab89e;
+    margin: 0 0 10px 0;
+    padding: 4px;
+    text-align: center;
+        
 }

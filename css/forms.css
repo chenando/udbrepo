@@ -1,0 +1,90 @@
+
+.placeholder fieldset {border-color: #1C8046;border-radius: 5px;margin-bottom: 10px}
+.placeholder fieldset legend{background-color: #1C8046;border-radius: 5px;padding:4px 20px;color: #ffffff;font-weight: bold;text-align: justify}
+
+.placeholder form > fieldset > ul{list-style: none;padding: 5px;}
+.placeholder form > fieldset > ul > li{padding: 2px;margin-bottom: 2px;border: 1px dotted green}
+.placeholder form > fieldset > ul > li > label{    
+    font-size: 95%;
+    border: dashed green 1px;   
+    padding: 2px 5px 2px 2px;
+    margin-left: 4px;
+    border:#bbb solid 1px;
+    background: none repeat scroll 0 0 #CECECE;
+    border-radius: 5px 5px 0 0;    
+    cursor: pointer;
+    text-align: justify;    
+}
+.placeholder form > fieldset > ul > li > label > strong{color: red;}
+.placeholder form > fieldset > ul > li > span{color: red;font-size: 80%;display: block;clear: both;}
+.placeholder form > fieldset > ul > li > input[type=date],
+.placeholder form > fieldset > ul > li > input[type=password],
+.placeholder form > fieldset > ul > li > input[type=tel],
+.placeholder form > fieldset > ul > li > input[type=email],
+.placeholder form > fieldset > ul > li > select,
+.placeholder form > fieldset > ul > li > input[type=text]{    
+    position: relative;
+    *display: block;
+    padding: 2px;        
+    height: 25px;   
+    border: 1px solid #899caa;   
+    border-radius: 4px;
+    box-shadow:inset 0px 1px 3px #bbb;
+    -webkit-box-shadow:inset 0px 1px 3px #bbb;
+    -moz-box-shadow:inset 0px 1px 3px #bbb;
+    background: none repeat scroll 0 0 #EEEEEE;    
+    -moz-font-feature-settings: inherit;
+    -moz-font-language-override: inherit;
+    box-shadow: -1px 0 1px rgba(0, 0, 0, 0.25);
+    font-family: inherit;    
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    outline: medium none;    
+}
+.placeholder form > fieldset > ul > li > select{height: 30px}
+.placeholder form > fieldset ul > li > input[readonly]{
+    background-color: transparent;
+    border: none;
+    font-weight:bold;
+    box-shadow: none;
+}
+.placeholder form > fieldset ul > li > input:focus {background: none repeat scroll 0 0 #ffffff;border-color: green;}
+
+
+@media only screen and (min-width: 480px) {
+    .placeholder form > fieldset > ul > li > span{}
+    .placeholder form input[type=date],
+    .placeholder form input[type=password],
+    .placeholder form input[type=tel],
+    .placeholder form input[type=email],
+    .placeholder form select,
+    .placeholder form input[type=text]{
+        display: inline-block;
+        width: 400px;
+    }
+    .placeholder form > fieldset > ul > li > label{
+        margin-top: 3px;
+        float: left;    
+        overflow: hidden;        
+        width: 200px;
+        border-radius: 5px 0 0 5px;
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+    .placeholder form label{
+        float: left;
+        border-radius: 0;
+    }
+    .placeholder form > fieldset > ul > li > span{margin-left: 215px}
+    .placeholder form > fieldset > ul > li > button{float: next;}
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
+

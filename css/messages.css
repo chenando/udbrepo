@@ -1,0 +1,45 @@
+.msg_info, .msg_ok, .msg_warning, .msg_error, .msg_clean, .msg_confirm{
+    display:block;
+    padding:15px;
+    padding-left:45px;
+    margin-bottom:8px;
+}
+.msg_confirm{
+    color:#00529b;
+    background:#bde5f8 url(../images/help.png) 5px 50% no-repeat;
+    border:1px solid #589cbc;
+}
+.msg_info{
+    color:#00529b;
+    background:#bde5f8 url(../images/Info.png) 5px 50% no-repeat;
+    border:1px solid #589cbc;
+}
+.msg_ok{
+    color:#4f8a10;
+    background:#dff2bf url(../images/Checked.png) 5px 50% no-repeat;
+    border:1px solid #a6ca6a;
+}
+.msg_warning{
+    color:#9f6000;
+    background:#feefb3 url(../images/Warning.png) 5px 50% no-repeat;
+    border:1px solid #e3cb46;
+}
+.msg_error{
+    color:#333;
+    background:#ffbaba url(../images/Error.png) 5px 50% no-repeat;
+    border:1px solid #de5b5b;
+}
+.msg_clean{
+    color:#666;
+    background:#efefef url(../images/clear.png) 5px 50% no-repeat;
+    border:1px solid #dedede;
+}
+.msLista{
+    clear:both;
+    float:none;
+    list-style:square;
+}
+.msLista li{
+    margin-left:30px;
+    padding:3px 0px 3px 0px;
+}
