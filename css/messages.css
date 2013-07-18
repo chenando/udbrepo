@@ -1,8 +1,9 @@
 .msg_info, .msg_ok, .msg_warning, .msg_error, .msg_clean, .msg_confirm{
     display:block;
-    padding:15px;
+    padding:10px;
     padding-left:45px;
     margin-bottom:8px;
+    line-height: 20px;
 }
 .msg_confirm{
     color:#00529b;

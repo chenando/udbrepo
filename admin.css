@@ -1,0 +1,13 @@
+@import url(css/messages.css);
+@import url(css/theme.css);
+@import url(css/buttons.css);
+@import url(css/panel.css);
+@import url(css/table.css);
+@import url(css/forms.css);
+.titulo{
+    background-color: #8ab89e;
+    margin: 0 0 10px 0;
+    padding: 4px;
+    text-align: center;
+
+}

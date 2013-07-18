@@ -1,0 +1,30 @@
+
+
+.body2 {
+    background-color: lightslategrey;
+}
+
+.body2 header{
+    background-color: green;
+}
+
+
+/*.report-header ul{list-style: none;display: block;border: dashed 1px green}
+.report-header label{font-weight: bold}
+
+#reporte{margin-left: 5%;margin-right: 5%;border: dashed 1px green;min-height: 700px}
+#contenido_reporte{margin-left: 20px;margin-right: 20px;display: none;}
+#alinear_centro{position: absolute;width:700px !important;left: 50% !important;margin-left:  -350px;padding: 4px;}
+#encabezado_actas_notas ul{list-style: none;margin: 0;padding: 0}
+#encabezado_actas_notas {text-align: justify;padding: 20px 10px 20px 10px;}
+#encabezado_actas_notas{font-size: 12px;}
+#encabezado_actas_notas label{font-weight: bold;}
+#encabezado_actas_notas .izquierda label{width: 80px;float: left;}    
+#encabezado_actas_notas .izquierda{float: left;overflow: hidden;}       
+#encabezado_actas_notas .derecha label{width: 100px;float: left;}
+#encabezado_actas_notas .derecha{float: right;overflow: hidden;}
+@media print{ 
+    #reporte{display: none;}
+    #contenido_reporte{display: block;}
+    div.salto_pagina{display:block;page-break-before:always;}
+}*/

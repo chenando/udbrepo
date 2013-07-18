@@ -1,7 +1,7 @@
-body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
-     background: none repeat-x scroll 0 0 #1C8046;
-     /**font-size: 1em;*/
-     line-height: 1.1;}
+.body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
+      background: none repeat-x scroll 0 0 #1C8046;
+      /**font-size: 1em;*/
+      line-height: 1.1;}
 .wrapper{ width: 96%;
           margin: 0 2%;
           border-left: transparent dotted 1px;
@@ -40,14 +40,20 @@ body{font: 16px/26px Helvetica, Helvetica Neue, Arial;
 .placeholder{position: relative;
              display: block;
              min-height: 500px;
-             border: dotted red 1px;         
+             border: dotted transparent 1px;         
              background:#fff url(../images/admin_30.gif) 0 0 repeat-x;
              /*             *background-size: auto 100%;*/
              border-radius: 10px 10px 0 0;
              clear: both;      
              /**overflow: hidden;*/
-             padding: 10px
+             padding: 10px;                             
 }
+.placeholder iframe{
+        border: none;
+        width: 480px;
+        height: 500px;
+    }
+
 .section div{
     position: relative
 }
@@ -90,7 +96,12 @@ nav a:hover {text-decoration: underline;}
     nav li:first-child a {margin-left: 0;}
     nav li:last-child a {margin-right: 0;}
     nav ul li {display: inline;}
-    .oldie nav a { margin: 0 0.7%;}      
+    .oldie nav a { margin: 0 0.7%;}  
+    .placeholder iframe{
+        border: none;
+        width: 768px;
+        height: 500px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -100,20 +111,17 @@ nav a:hover {text-decoration: underline;}
     .main aside {-webkit-box-shadow: 0 5px 10px #FBBB00;
                  -moz-box-shadow: 0 5px 10px #FBBB00;
                  box-shadow: 0 5px 10px #FBBB00;
-    }  
+    } 
+    .placeholder iframe{
+        border: none;
+        width: 970px;
+        height: 500px;
+    }    
 }
 
 @media only screen and (min-width: 1140px) {
     .wrapper {
         width: 1026px; /* 1140px - 10% para margenes*/
         margin: 0 auto;
-    }
-}
-
-.titulo{
-    background-color: #8ab89e;
-    margin: 0 0 10px 0;
-    padding: 4px;
-    text-align: center;
-        
+    }    
 }

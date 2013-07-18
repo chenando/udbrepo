@@ -1,0 +1,44 @@
+@import url(css/theme2.css);
+@import url(css/messages.css);
+@import url(css/buttons.css);
+@import url(css/panel.css);
+@import url(css/table.css);
+/*@import url(css/forms.css);*/
+
+
+
+.placeholder form {margin-bottom: 8px;}
+.placeholder form ul{list-style: none;padding: 2px}
+.placeholder fieldset{border: 1px dashed green;padding: 2px;margin-bottom: 8px}
+.placeholder fieldset + fieldset{margin-bottom: 8px}
+.placeholder fieldset:last-child{padding-bottom: 8px;}
+.placeholder label{display: block;font-weight: bold}
+.placeholder form label > strong{color: red;}
+.placeholder form ul > li > span{color: red;font-size: 80%;display: block;clear: both;}
+.placeholder form input[type=date],
+.placeholder form input[type=password],
+.placeholder form input[type=tel],
+.placeholder form input[type=email],
+.placeholder form input[type=number],
+.placeholder form select,
+.placeholder form input[type=text]{ width: 100% }
+.placeholder input[readonly]{background-color: transparent;border: none}
+.placeholder select[disabled]{background-color: transparent;border: none}
+.center{text-align: center}
+.justify{text-align: justify}
+.placeholder fieldset legend{ margin-left: 10px}
+.placeholder fieldset legend.green{color: #ffffff;background-color: #0c532a;font-weight: bold;padding-left:4px;padding-right: 4px}
+.bg_titulo{background-color: #8ab89e;margin: 0 0 10px 0;padding: 4px;}
+@media only screen and (min-width: 480px) {
+    .placeholder form input[type=date],
+    .placeholder form input[type=password],
+    .placeholder form input[type=tel],
+    .placeholder form input[type=email],
+    .placeholder form input[type=number],
+    .placeholder form select,
+    .placeholder form input[type=text]{width: 350px }
+}
+@media only screen and (min-width: 768px) {
+    .placeholder label{float: left;width: 180px}
+
+}

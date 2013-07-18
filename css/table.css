@@ -1,36 +1,37 @@
-table{width:100%;border:1px solid #006239;}
+.table table{width:100%;border:1px solid #006239;}
 
-table thead tr{height:30px;background:url(../images/tablaHead_01.gif) 0 0 repeat-x;}
+.table table thead tr {height:30px;background:url(../images/tablaHead_01.gif) 0 0 repeat-x;background-size: 100% 100%}
 
 table thead {*border:#006239 solid 1px }
 
-table thead .tOpciones{color:#000;background:url(../images/tablaHead_01_2.gif) 0 0 repeat-x;}
+.table table thead .tOpciones{color:#000;background:url(../images/tablaHead_01_2.gif) 0 0 repeat-x;}
 
-table thead tr th{color:#FFF;font-size:12px;text-align:center;}
+.table table thead tr th{color:#FFF;font-size:12px;text-align:center;line-height: 15px}
 
-table thead tr th:nth-child(2n+2){border-left:#006239 solid 1px;border-right:1px solid #006239;}
+.table table thead tr th:nth-child(2n+2){border-left:#006239 solid 1px;border-right:1px solid #006239;}
 
-table tbody{background: #FFF url(../images/tablaFondo_01.gif) 0 0 repeat-x;}
+.table table tbody{background: #FFF url(../images/tablaFondo_01.gif) 0 0 repeat-x;}
 
-table tbody tr:nth-child(odd){background-color: #ebebeb;}
+.table table tbody tr{line-height: 18px}
+.table table tbody tr:nth-child(odd){background-color: #ebebeb;}
 
-table tbody tr:nth-child(even){border-top: #ccc dashed 1px;border-bottom: #ccc dashed 1px}
+.table table tbody tr:nth-child(even){border-top: #ccc dashed 1px;border-bottom: #ccc dashed 1px}
 
-table tbody tr:hover{color:#bf5900;background:#f9e48c;}
+.table table tbody tr:hover{color:#bf5900;background:#f9e48c;}
 
-table tbody tr td{font-size:11px;*padding:3px 0px 3px 5px;}
+.table table tbody tr td{font-size:11px;*padding:3px 0px 3px 5px;}
 
-table tbody tr td:nth-child(2n+2){border-right:1px solid #ccc;border-left: 1px solid #ccc;}
+.table table tbody tr td:nth-child(2n+2){border-right:1px solid #ccc;border-left: 1px solid #ccc;}
 
-table tbody tr h1{font-size:18px;display:block;color:#0080cb;margin:40px 0px 50px 0;padding:0;}
+.table table tbody tr h1{font-size:18px;display:block;color:#0080cb;margin:40px 0px 50px 0;padding:0;}
 
-a.linkOpciones{text-decoration:none;float:left;}
+.table a.linkOpciones{text-decoration:none;float:left;}
 
-a.linkOpciones img{margin:0 0 0 7px;border:0px;}
+.table a.linkOpciones img{margin:0 0 0 7px;border:0px;}
 
-table tfoot tr{background: #d0edfd;}
+.table table tfoot tr{background: #d0edfd;}
 
-table tfoot tr td{color:#103955;text-align:center;padding:3px;}
+.table table tfoot tr td{color:#103955;text-align:center;padding:3px;}
 
 
 /*RESPONSIVE*/
@@ -39,20 +40,20 @@ table tfoot tr td{color:#103955;text-align:center;padding:3px;}
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
     /* Force table to not be like tables anymore */
-    table, thead, tbody, th, td, tr { 
+    .table table, thead, tbody, th, td, tr { 
         display: block; 
     }
 
     /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr { 
+    .table thead tr { 
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
 
-    tr { border: 1px solid #ccc; }
+    .table tr { border: 1px solid #ccc; }
 
-    td { 
+    .table td { 
         /* Behave  like a "row" */
         border: none;
         border-bottom: 1px solid #eee; 
@@ -60,7 +61,7 @@ table tfoot tr td{color:#103955;text-align:center;padding:3px;}
         padding-left: 50%; 
     }
 
-    td:before { 
+    .table td:before { 
         /* Now like a table header */
         position: absolute;
         /* Top/left values mimic padding */
@@ -73,8 +74,8 @@ table tfoot tr td{color:#103955;text-align:center;padding:3px;}
         height:30px;                
     }
 
-    table tbody tr td:nth-child(2n+2){border:none}
-    table tbody tr:nth-child(even){border-top: none;border-bottom: none}
+    .table table tbody tr td:nth-child(2n+2){border:none}
+    .table table tbody tr:nth-child(even){border-top: none;border-bottom: none}
     /*Label the data option 1*/
 
     /*    td:nth-of-type(1):before { content: "EMPLEADO"; }
@@ -91,5 +92,5 @@ table tfoot tr td{color:#103955;text-align:center;padding:3px;}
 
     /*Label the data option 2*/
 
-    td:before { content: attr(title); }
+    .table td:before { content: attr(title); }
 }
