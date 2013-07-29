@@ -41,8 +41,10 @@ body{
     font-size: 12pt; 
 }
 @media screen{
+    #reporte .contenido{ width: 90%}
     #reporte .papel{padding: 5px;}
 }
 @media print{
+    #reporte {font-family:times,serif;font-size:10px;}
     #reporte header{display: none} 
 }
