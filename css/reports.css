@@ -3,7 +3,7 @@ body{
     background-color: #cccccc;
     font-size: 12px;
 }
-.placeholder #reporte{background-color: transparent;}
+.placeholder #reporte{background-color: transparent;font-size: 12px}
 
 #reporte > header{
     border: 1px dashed transparent;            
