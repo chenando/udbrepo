@@ -1,4 +1,4 @@
-
+@media only screen{
 .table table{width:100%;border:1px solid #006239;}
 
 .table table thead tr {height:30px;background:url(../images/tablaHead_01.gif) 0 0 repeat-x;background-size: 100% 100%}
@@ -33,7 +33,7 @@
 .table table tfoot tr{background: #d0edfd;}
 
 .table table tfoot tr td{color:#103955;text-align:center;padding:3px;}
-
+}
 
 /*RESPONSIVE*/
 
@@ -91,11 +91,14 @@
         td:nth-of-type(10):before { content: "NOMBRE_TIPO_GRUPO"; }
         td:nth-of-type(10):before { content: "OPERACION"; }*/
 
-    /*Label the data option 2*/
 
     .table td:before { content: attr(title); }
 }
 
+
+
 @media only print{
-    
+    .table table thead tr{background-color: #8ab89e;}
+    .table table tr {border: #000000 solid 1px}
+    .table table tbody tr td:nth-child(2n+2),.table table thead tr th:nth-child(2n+2){border-right:1px solid #000000;border-left: 1px solid #000000;}
 }
