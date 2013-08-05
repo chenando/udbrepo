@@ -443,5 +443,8 @@ h1.logo{color: #FFFFFF;
     h3 {
         page-break-after: avoid;
     }
+    .header-container,.footer-container{display: none}
+    .wrapper{font-size: 10px;line-height: 15px;}
+    .not_print{display: none}
 }
 

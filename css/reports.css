@@ -43,8 +43,11 @@ body{
 @media screen{
     #reporte .contenido{ width: 90%}
     #reporte .papel{padding: 5px;}
+    #reporte * {font-family:arial;font-size:11px;}
 }
 @media print{
-    #reporte {font-family:times,serif;font-size:10px;}
+    #reporte * {font-family:arial;font-size:10px;}
     #reporte header{display: none} 
+    .salto_pagina{page-break-before:always;}
+    header.header{display: none}
 }
