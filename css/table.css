@@ -98,9 +98,10 @@
 
 
 @media only print{
+    .table table{width: 100%}
     .table table thead tr{background-color: #8ab89e;}
     .table table tr {border: #000000 solid 1px}
     .table table tbody tr td:nth-child(2n+2),.table table thead tr th:nth-child(2n+2){border-right:1px solid #000000;border-left: 1px solid #000000;}
     .table table  td {padding: 2px}
-    .table table  td *{font-size: 10px;line-height: 15px}
+    .table table  td *{font-size: 10px;line-height: 12px}
 }

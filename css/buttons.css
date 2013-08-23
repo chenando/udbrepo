@@ -1,4 +1,4 @@
-
+@media only screen{
 .button, .button:visited { 
     background: #222 url(../images/overlay.png) repeat-x;    
     padding: 5px 10px 6px 1px;
@@ -77,3 +77,4 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .yellow.button, .yellow.button:visited { background-color: #FFB515; }
 .yellow.button:hover{ background-color: #FC9200; }
 
+}

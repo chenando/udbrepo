@@ -47,7 +47,5 @@ body{
 }
 @media print{
     #reporte * {font-family:arial;font-size:10px;}
-    #reporte header{display: none} 
-    .salto_pagina{page-break-before:always;}
-    header.header{display: none}
+    #reporte header{display: none}       
 }

@@ -49,10 +49,10 @@
              padding: 10px;                             
 }
 .placeholder iframe{
-        border: none;
-        width: 480px;
-        height: 500px;
-    }
+    border: none;
+    width: 480px;
+    height: 500px;
+}
 
 .section div{
     position: relative
@@ -104,6 +104,8 @@ nav a:hover {text-decoration: underline;}
     }
 }
 
+#rpt_print{display: none}
+
 @media only screen and (min-width: 768px) {
     nav {clear: none}
     .header h1.logo{margin:0 10px 10px 0;}
@@ -124,4 +126,81 @@ nav a:hover {text-decoration: underline;}
         width: 1026px; /* 1140px - 10% para margenes*/
         margin: 0 auto;
     }    
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    header.header{display: none}   
+    footer.footer{display: none}
+    .footer-container,.header-container,.main aside{display: none}
+    .salto_pagina{page-break-inside:  avoid;}
+    #rpt_preview{display: none}
+    #rpt_print{display: block}
+    .titulo{display: none}
+    .titulo span{display: none}
 }
