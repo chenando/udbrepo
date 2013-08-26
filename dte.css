@@ -453,4 +453,5 @@ button.link{
     .salto_pagina{page-break-inside: avoid;}
     #rpt_preview{display: none}
     #rpt_print{display: block}
+    .not_print{display: none}
 }

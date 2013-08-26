@@ -203,4 +203,5 @@ nav a:hover {text-decoration: underline;}
     #rpt_print{display: block}
     .titulo{display: none}
     .titulo span{display: none}
+    .not_print{display: none}
 }
