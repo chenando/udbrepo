@@ -189,30 +189,10 @@ button.link{
 }
 #rpt_print{display: none}
 
-
-
-/* ==========================================================================
-   Panel
-   ========================================================================== */
 .panel {list-style:  none;padding: 0;margin: 0;min-height: 365px}
 .panel ul{list-style: none;padding: 4px;}
 .panel ul li{margin-bottom: 5px}
-
 .panel a.button, .panel a.button:visited{display: block;text-align: center}
-
-@media only screen and (min-width: 480px) {
-    .panel{margin-left: auto;margin-right: auto;text-align: center}
-    .panel ul{position: relative;overflow: hidden;clear: both; }
-
-    .panel ul li {        
-        margin: 5px;
-        padding: 1px;               
-        overflow: hidden;        
-    }
-
-    .panel .button{ height: 80px;width: 100px}
-    .panel a.button{ text-align: center}
-}
 
 
 
@@ -258,6 +238,20 @@ button.link{
     .oldie nav a {
         margin: 0 0.7%;
     }
+
+    .panel{margin-left: auto;margin-right: auto;text-align: center}
+    .panel ul{position: relative;overflow: hidden;clear: both; }
+
+    .panel ul li {        
+        margin: 5px;
+        padding: 1px;
+        display: block;
+        overflow: hidden;        
+    }
+
+    .panel .button{ height: 80px;width: 100px}
+    .panel a.button{ text-align: center}
+    .panel ul li{display: inline-block}
 }
 
 @media only screen and (min-width: 768px) {

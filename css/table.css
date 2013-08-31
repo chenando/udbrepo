@@ -20,7 +20,7 @@
 
     .table table tbody tr:hover{color:#bf5900;background:#f9e48c;}
 
-    .table table tbody tr td{font-size:11px;padding: 2px;line-height: 17px}
+    .table table tbody tr td{font-size:11px;line-height: 17px}
 
     .table table tbody tr td:nth-child(2n+2){border-right:1px solid #ccc;border-left: 1px solid #ccc;}
 
@@ -92,7 +92,7 @@
         td:nth-of-type(10):before { content: "OPERACION"; }*/
 
 
-    .table td:before { content: attr(title); }
+    .table  table td:before { content: attr(title); }
 }
 
 
