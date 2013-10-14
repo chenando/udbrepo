@@ -1,0 +1,85 @@
+/* 
+    Document   : btns
+    Created on : 07-09-2013, 12:09:09 PM
+    Author     : Frm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@media only screen{
+    .btn, .btn:visited { 
+        background: #222 url(../images/overlay.png) repeat-x;
+        padding: 2px 6px 3px;     
+        color: #FFF;
+        text-decoration: none;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        position: relative;
+        cursor:pointer;
+    }
+    .btn:active{top: 1px;}
+    .btn:hover {background-color: #111;color: #FFF;}
+
+    button::-moz-focus-inner,
+    input[type="reset"]::-moz-focus-inner,
+    input[type="button"]::-moz-focus-inner,
+    input[type="submit"]::-moz-focus-inner,
+    input[type="file"] > input[type="button"]::-moz-focus-inner {
+        border: none;
+    }
+
+    /*botones pequeños */
+    .small.btn, .small.btn:visited {
+        font-size: 11px ;
+    }
+
+    /*botones medianos */
+    .btn, .btn:visited,.medium.btn, .medium.btn:visited {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    }
+
+    /* botones grandes */
+    .large.btn, .large.btn:visited {
+        font-size:14px;
+        padding: 8px 14px 9px;
+    }
+
+    /*botones extra grandes */
+    .super.btn, .super.btn:visited {
+        font-size: 34px;
+        padding: 8px 14px 9px;
+    }
+
+    .pink.btn { background-color: #E22092; }
+    .pink.btn:hover{ background-color: #C81E82; }
+
+    .green.btn, .green.btn:visited {background-color: #1C8046; }
+    .green.btn:hover{ background-color: #0c532a;}
+
+    .red.btn, .red.btn:visited { background-color: #E62727; }
+    .red.btn:hover{ background-color: #CF2525; }
+
+    .orange.btn, .orange.btn:visited { background-color: #FF5C00; }
+    .orange.btn:hover{ background-color: #D45500; }
+
+    .blue.btn, .blue.btn:visited { background-color: #2981E4; }
+    .blue.btn:hover{ background-color: #2575CF; }
+
+    .yellow.btn, .yellow.btn:visited { background-color: #FFB515; }
+    .yellow.btn:hover{ background-color: #FC9200; }
+    
+    .yellow.green.btn,.yellow.green.btn:visited{background-color: #91BD09; }
+    .yellow.green.btn:hover{ background-color: #749A02;  }
+}

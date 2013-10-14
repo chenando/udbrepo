@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-10-2013, 10:15:54 AM
+    Author     : Frm
+*/
+
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+.tooltip:hover:after{ 
+    background: #333;    
+    background: rgba(0,0,0,.6);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+/*colors*/
+
+.tooltip.pink:hover:after{background: #E22092;background: rgba(226, 32, 146, .7)}
+.tooltip.pink:hover:before{border-color: #E22092 transparent;}
+
+.tooltip.green:hover:after{background: #1C8046;background: rgba(28,128,70,.7);}
+.tooltip.green:hover:before{border-color: #1C8046 transparent;}
+
+.tooltip.red:hover:after{background: #E62727;background: rgba(230, 39, 39, .7)}
+.tooltip.red:hover:before{border-color: #E62727 transparent;}
+
+.tooltip.orange:hover:after{background: #FF5C00;background: rgba(255, 92, 0, .7)}
+.tooltip.orange:hover:before{border-color: #FF5C00 transparent;}
+
+.tooltip.blue:hover:after{background: #2981E4;background: rgba(41, 129, 228, .7)}
+.tooltip.blue:hover:before{border-color: #2981E4 transparent;}
+
+.green.yellow.tooltip:hover:after{background: #91BD09;background: rgba(145, 189, 9, .7)}
+.green.yellow.tooltip:hover:before{border-color: #91BD09 transparent;}

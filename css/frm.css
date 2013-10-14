@@ -1,0 +1,79 @@
+/* 
+    Document   : frm
+    Created on : 02-09-2013, 09:37:24 AM
+    Author     : Frm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.frm  ul{list-style: none;padding: 0px;margin: 0}
+.frm  ul > li{padding: 2px;margin-bottom: 2px;}
+.frm fieldset + fieldset{margin-bottom: 2px;}
+@media only screen{
+    form.frm fieldset.decorate{border-radius: 2px;-webkit-border-radius: 2px}
+    form.frm fieldset.decorate legend{color:#ffffff;background-color: #006239;padding-left: 2px;padding-right: 2px}
+    form.frm fieldset.dsh{border: dashed 1px green;}
+    form.frm fieldset.sld{border: solid 1px green;}
+
+    form.frm label {    
+        cursor: pointer;
+        text-align: justify; 
+        font-weight: bolder
+    }
+
+    form.frm input[type=date],
+    form.frm input[type=password],
+    form.frm input[type=tel],
+    form.frm input[type=email],
+    form.frm input[type=number],
+    form.frm select,
+    form.frm textarea,
+    form.frm input[type=text]{    
+        position: relative;
+        padding: 1px;       
+        width: 99%;        
+        border: 1px solid #899caa;   
+        border-radius: 4px;
+        box-shadow:inset 0px 1px 3px #bbb;
+        -webkit-box-shadow:inset 0px 1px 3px #bbb;
+        -moz-box-shadow:inset 0px 1px 3px #bbb;
+        background: none repeat scroll 0 0 #EEEEEE;    
+        -moz-font-feature-settings: inherit;
+        -moz-font-language-override: inherit;
+        box-shadow: -1px 0 1px rgba(0, 0, 0, 0.25);
+        font-family: inherit;    
+        font-size-adjust: inherit;
+        font-stretch: inherit;
+        font-style: inherit;
+        font-variant: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        outline: medium none;    
+    }
+    form.frm input:focus {background: none repeat scroll 0 0 #ffffff;border-color: green;}
+    form.frm {padding: 2px}
+    form.frm input + span{color: red;font-size: 80%;}
+    form.frm label > span{color: red;font-size: 80%}
+    form.frm button{width: auto}    
+}
+@media only screen and (min-width: 480px) {
+    form.frm button {width: auto}
+    form.frm label {    border-radius: 5px 0 0 5px; }
+}
+@media only screen and (min-width: 768px) {
+    formm.frm label{
+        display: initial;      
+        margin: 0;
+        float: left;
+        width: 150px;
+        background-color: #cccccc;
+        border-radius: 5px 0 0 5px;
+    }      
+    form.frm input[type=date],
+    form.frm input[type=password],
+    form.frm input[type=tel],
+    form.frm input[type=email],
+    form.frm input[type=number],
+    form.frm select,
+    form.frm textarea,
+    form.frm input[type=text]{ display: initial;width: 40%; }
+}

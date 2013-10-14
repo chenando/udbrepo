@@ -1,0 +1,74 @@
+/* 
+    Document   : bg
+    Created on : 07-09-2013, 12:09:09 PM
+    Author     : Frm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@media only screen{
+    .bg, .bg:visited { 
+        background: #222 url(../images/overlay.png) repeat-x;
+        padding: 2px 6px 3px;     
+        color: #FFF;
+        text-decoration: none;      
+/*        box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25);*/
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0;
+        position: relative;
+        cursor:context-menu;
+    }
+    
+    .bg:hover {background-color: #111;color: #FFF;}
+  
+    /*botones pequeños */
+    .small.bg, .small.bg:visited {
+        font-size: 11px ;
+    }
+
+    /*botones medianos */
+    .bg, .bg:visited,.medium.bg, .medium.bg:visited {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    }
+
+    /* botones grandes */
+    .large.bg, .large.bg:visited {
+        font-size:14px;
+        padding: 8px 14px 9px;
+    }
+
+    /*botones extra grandes */
+    .super.bg, .super.bg:visited {
+        font-size: 34px;
+        padding: 8px 14px 9px;
+    }
+
+    .pink.bg { background-color: #E22092; }
+    /*.pink.bg:hover{ background-color: #C81E82; }*/
+
+    .green.bg, .green.bg:visited {background-color: #1C8046; }
+    /*.green.bg:hover{ background-color: #0c532a;}*/
+
+    .red.bg, .red.bg:visited { background-color: #E62727; }
+    /*.red.bg:hover{ background-color: #CF2525; }*/
+
+    .orange.bg, .orange.bg:visited { background-color: #FF5C00; }
+    /*.orange.bg:hover{ background-color: #D45500; }*/
+
+    .blue.bg, .blue.bg:visited { background-color: #2981E4; }
+    /*.blue.bg:hover{ background-color: #2575CF; }*/
+
+    .yellow.bg, .yellow.bg:visited { background-color: #FFB515; }
+    /*.yellow.bg:hover{ background-color: #FC9200; }*/
+    
+    .yellow.green.bg,.yellow.green.bg:visited{background-color: #91BD09; }
+    /*.yellow.green.bg:hover{ background-color: #749A02;  }*/
+}

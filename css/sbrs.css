@@ -1,0 +1,47 @@
+/* 
+    Document   : scrollbars
+    Created on : 05-09-2013, 11:28:33 AM
+    Author     : Frm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*body{
+    font-family: sans-serif;
+    font-size:12px;
+    background: #fff;
+    overflow-y: hidden;
+}*/
+#widget{
+    width: 600px;
+    height:400px;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-track-piece  {    
+    -webkit-border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: #0c532a url(../images/scrollbar_thumb_bg.png) no-repeat center;
+}
+
+/*::-webkit-scrollbar-thumb:vertical {
+   -webkit-border-radius: 2px;
+    background: #666 url(../images/scrollbar_thumb_bg.png) no-repeat center;
+}*/
+

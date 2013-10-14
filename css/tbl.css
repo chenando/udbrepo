@@ -1,0 +1,81 @@
+/* 
+    Document   : tbl
+    Created on : 04-09-2013, 07:02:42 PM
+    Author     : Frm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@media only screen{
+    .table table{width:100%;border:1px solid #006239;}
+
+    .table table thead tr {height:30px;background:url(../images/tablaHead_01.gif) 0 0 repeat-x;background-size: 100% 100%}
+
+    .table table thead .tOpciones{color:#000;background:url(../images/tablaHead_01_2.gif) 0 0 repeat-x;}
+
+    .table table thead tr th{color:#FFF;text-align:center;}
+
+    .table table thead tr th:nth-child(2n+2){border-left:#006239 solid 1px;border-right:1px solid #006239;}
+
+    .table table tbody{background: #FFF url(../images/tablaFondo_01.gif) 0 0 repeat-x;}
+
+    .table table tbody tr:nth-child(odd){background-color: #ebebeb;}
+
+    .table table tbody tr:nth-child(even){border-top: #ccc dashed 1px;border-bottom: #ccc dashed 1px}
+
+    .table table tbody tr:hover{color:#bf5900;background:#f9e48c;}
+
+    .table table tbody tr td:nth-child(2n+2){border-right:1px solid #ccc;border-left: 1px solid #ccc;}
+
+    .table a.linkOpciones{text-decoration:none;float:left;}
+
+    .table a.linkOpciones img{margin:0 0 0 7px;border:0px;}
+
+    .table table tfoot tr{background: #d0edfd;}
+
+    .table table tfoot tr td{color:#103955;text-align:center;padding:3px;}
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width:768px)  {
+    .table table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    .table table thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .table table tr { border: 1px solid #ccc; }
+    .table table td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+    .table table td:before { 
+        position: absolute;
+        left: 0.5em;
+        /*width: 45%;*/ 
+        width: 1px; 
+        font-weight: bold;
+        /*padding-right: 10px;*/ 
+        white-space: nowrap;
+        height:30px;                
+    }
+    .table table tbody tr td:nth-child(2n+2){border:none}
+    .table table tbody tr:nth-child(even){border-top: none;border-bottom: none}
+    .table  table td:before { content: attr(title); }
+}
+
+@media only print{    
+    .table *{font-size: 10px;line-height: 12px}
+    .table table{width: 100%}
+    .table table thead tr{background-color: #8ab89e;}
+    .table table tr {border: #000000 solid 1px}
+    .table table tbody tr td:nth-child(2n+2),.table table thead tr th:nth-child(2n+2){border-right:1px solid #000000;border-left: 1px solid #000000;}
+    .table table  td {padding: 2px}
+}
+

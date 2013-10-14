@@ -9,3 +9,11 @@
     padding: 4px;
     text-align: center;
 }
+.link {
+    color: blue;
+    border:none;
+    background-color: transparent;
+    text-decoration: underline;
+    text-align: center;
+}
+.link:hover{text-decoration: none;}
